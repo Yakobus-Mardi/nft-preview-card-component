@@ -6,13 +6,13 @@
   --cyan: hsl(178, 100%, 50%);
 
   /* Neutral Colors */
-  --very-dark-blue-01: hsl(217, 54%, 11%); /*main BG*/
-  --very-dark-blue-02: hsl(216, 50%, 16%); /*card BG*/
-  --very-dark-blue-03: hsl(215, 32%, 27%); /*line*/
+  --main-bg: hsl(217, 54%, 11%); /*main BG*/
+  --card-bg: hsl(216, 50%, 16%); /*card BG*/
+  --very-dark-blue: hsl(215, 32%, 27%); /*line*/
   --white: hsl(0, 0%, 100%);
 
   /* Font Family */
-  --main--ff: "Outfit", sans-serif;
+  --main-ff: "Outfit", sans-serif;
 }
 
 * {
@@ -21,9 +21,132 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: var(--main-ff);
+}
+
+body {
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 10px);
+}
+
+main {
+  background-color: var(--card-bg);
+  max-width: 250px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+p {
+  color: hsl(0, 0%, 100%, 50%);
+  font-weight: 600;
+}
+
+.hero-image-container {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.overlay-image {
+  background-color: hsla(178, 100%, 50%, 0.5);
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.overlay-image:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.top h1 {
+  color: var(--white);
+  font-weight: 600;
+  padding: 10px 0;
+  font-size: 1.8rem;
+}
+
+.top h1:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.top p {
+  padding-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.ethereum-icon,
+.clock {
+  display: flex;
+  align-items: center;
+}
+
+.ethereum-icon p {
+  color: var(--cyan);
+  margin-left: 8px;
+}
+
+.clock p,
+.bottom p {
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+hr {
+  color: var(--very-dark-blue);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.bottom span {
+  color: var(--white);
+}
+
+.bottom span:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.avatar-img {
+  width: 30px;
+  border-radius: 50%;
+  border: 1.8px solid hsl(0, 0%, 100%, 50%);
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 13px;
   text-align: center;
+  color: var(--white);
+  margin-top: 12px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
