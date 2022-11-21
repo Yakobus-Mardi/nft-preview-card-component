@@ -51,7 +51,7 @@ I want to refactoring the code, especially the CSS codes. I think I can stil red
 
 ### Useful resources
 
-- [](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning) - This helped me to learn about positioning.
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning) - This helped me to learn about positioning.
 
 ## Author
 
