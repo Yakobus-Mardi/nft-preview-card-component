@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/Yakobus-Mardi/nft-preview-card-component)
-- Live Site URL: [](https://yakobus-mardi.github.io/nft-preview-card-component/)
+- Solution URL: [Solution](https://github.com/Yakobus-Mardi/nft-preview-card-component)
+- Live Site URL: [Live site](https://yakobus-mardi.github.io/nft-preview-card-component/)
 
 ## My process
 
